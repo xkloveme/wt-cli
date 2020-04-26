@@ -1,0 +1,43 @@
+{
+  "name": "wt-cli",
+  "version": "1.0.4",
+  "description": "快速开始一个wt-cli项目",
+  "bin": {
+    "wt": "bin/wt-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "vue"
+  ],
+  "author": "xkloveme",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "archiver": "^3.1.1",
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "commander": "^3.0.0",
+    "compressing": "^1.4.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "etpl": "^3.2.0",
+    "express": "^4.17.1",
+    "figlet": "^1.2.3",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15",
+    "log-symbols": "^3.0.0",
+    "mz": "^2.7.0",
+    "ora": "^3.4.0",
+    "path-to-regexp": "^3.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "semver": "^6.3.0",
+    "shelljs": "^0.8.3",
+    "util": "^0.12.1"
+  }
+}

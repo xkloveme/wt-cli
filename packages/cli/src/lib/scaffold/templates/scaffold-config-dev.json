@@ -1,0 +1,151 @@
+{
+  "version": "0.1.0",
+  "defaults": {
+    "framework": "Vue",
+    "template": "simple"
+  },
+  "frameworks": [
+    {
+      "value": "Vue",
+      "name": "Vue2",
+      "subList": {
+        "template": [
+          {
+            "value": "simple",
+            "name": "simple",
+            "git": "https://github.com/xkloveme/wt-cli-temp-simple.git",
+            "branch": "master",
+            "desc": "基础模版",
+            "locals": {
+              "zh_CN": {
+                "desc": "简单模版"
+              },
+              "en": {
+                "desc": "Simple Template"
+              }
+            }
+          },
+          {
+            "value": "complex",
+            "name": "complex",
+            "git": "https://github.com/xkloveme/wt-cli-temp-simple.git",
+            "branch": "dev",
+            "desc": "复杂模版",
+            "locals": {
+              "zh_CN": {
+                "desc": "包含 wt-cli 和 PWA 工程化相关必需内容 \n(默认包含 Babel,Router,vuex, Sass)"
+              },
+              "en": {
+                "desc": "contains wt-cli and PWA \n(default Babel,Router,vuex,Sass)"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "schema": {
+    "framework": {
+      "type": "list",
+      "name": "前端框架",
+      "description": "项目所选择的基础框架",
+      "locals": {
+        "zh_CN": {
+          "name": "前端框架",
+          "description": "项目所选择的基础框架"
+        },
+        "en": {
+          "name": "framework",
+          "description": "The framework chosen for the project"
+        }
+      },
+      "required": true,
+      "link": "frameworks",
+      "default": "vue",
+      "checkbox": false,
+      "disable": true,
+      "depLevel": 0,
+      "list": [],
+      "jsonType": "string"
+    },
+    "template": {
+      "type": "list",
+      "name": "模版类型",
+      "description": "初始化项目时选中的模版类型",
+      "locals": {
+        "zh_CN": {
+          "name": "模版类型",
+          "description": "初始化项目时选中的模版类型"
+        },
+        "en": {
+          "name": "template",
+          "description": "The type of template selected when initializing the project"
+        }
+      },
+      "dependence": "framework",
+      "default": "Basic",
+      "ref": "template",
+      "depLevel": 1,
+      "checkbox": false,
+      "required": true,
+      "list": [],
+      "jsonType": "string"
+    },
+    "checkbox": {
+      "type": "checkbox",
+      "key": "checkbox",
+      "name": "选择选项",
+      "description": "检查项目所需的功能",
+      "required": true,
+      "checkbox": true,
+      "list": [
+        {
+          "value": "router",
+          "name": "Router",
+          "checked": false
+        },
+        {
+          "value": "vuex",
+          "name": "Vuex",
+          "checked": false
+        },
+        {
+          "value": "css",
+          "name": "CSS Pre-processors",
+          "checked": false
+        },
+        {
+          "value": "typescript",
+          "name": "Typescript",
+          "checked": false
+        }
+      ],
+      "depLevel": 0,
+      "jsonType": "string"
+    },
+    "csssProcessors": {
+      "type": "list",
+      "key": "csssProcessors",
+      "name": "选择CSS预处理器",
+      "description": "（支持PostCSS，Autoprefixer和CSS模块默认情况下）",
+      "required": true,
+      "checkbox": true,
+      "list": [
+        {
+          "value": "scss",
+          "name": "Sass/SCSS"
+        },
+        {
+          "value": "less",
+          "name": "Less"
+        },
+        {
+          "value": "stylus",
+          "name": "Stylus"
+        }
+      ],
+      "depLevel": 0,
+      "jsonType": "string"
+    }
+  }
+}

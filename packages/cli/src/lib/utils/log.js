@@ -82,7 +82,7 @@ logTypes.forEach(function (item) {
       flag.clear();
     }
     if (msg) {
-      console.log((log.prefix || 'wt-cli') + ' ' + item.color(item.name.toUpperCase()) + ' ' + msg);
+      console.log(item.color(log.prefix || 'WT:') + ' ' + item.color(item.name.toUpperCase()) + ' ' + item.color(msg));
     }
     else {
       console.log();

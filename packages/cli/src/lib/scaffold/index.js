@@ -27,8 +27,7 @@ async function extendsDefaultFields (fields = {}, templateConf = {}) {
     Object.keys(schema).forEach((key) => (defaultFields[key] = schema[key].default))
 
     /* eslint-disable fecs-use-computed-property */
-    // defaultFields.name = fields.name || 'ivue-cli'
-    defaultFields.name = fields.name || 'ivue-cli';
+    defaultFields.name = fields.name || 'wt-template';
 
     defaultFields.dirPath = path.resolve(process.cwd(), fields.dirPath || '', defaultFields.name);
 

@@ -14,7 +14,7 @@ function setPackConfig (storeDir, currentDir, etplCompile) {
     let packageConfig = fs.readFileSync(path.resolve(storeDir, 'package.json'), 'utf-8');
     // 插入版本号
     packageConfig = JSON.parse(packageConfig)
-    packageConfig.devDependencies['vue-router'] = '^3.1.2';
+    packageConfig.devDependencies['vue-router'] = '^3.3.0';
 
     // 转换字符串
     packageConfig = JSON.stringify(packageConfig, null, 4);

@@ -13,12 +13,12 @@
           {
             "value": "simple",
             "name": "simple",
-            "git": "https://github.com/xkloveme/wt-cli-temp-simple.git",
+            "git": "https://github.com/xkloveme/wt-template.git",
             "branch": "master",
             "desc": "基础模版",
             "locals": {
               "zh_CN": {
-                "desc": "简单模版"
+                "desc": "简单模版 \n 依赖最少,最轻量级模版"
               },
               "en": {
                 "desc": "Simple Template"
@@ -28,7 +28,7 @@
           {
             "value": "complex",
             "name": "complex",
-            "git": "https://github.com/xkloveme/wt-cli-temp-simple.git",
+            "git": "https://github.com/xkloveme/wt-complex-template.git",
             "branch": "dev",
             "desc": "复杂模版",
             "locals": {

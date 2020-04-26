@@ -19,14 +19,15 @@ module.exports = function (program) {
     .command('init')
     .description(locals.INIT_DESC)
     .option('-f, --force', locals.INIT_OPTION_FORCE)
-    .action(options => init({
+    .action((cmd,options) => init({
+      cmd: cmd,
       force: options.force
     }));
-  // H5 app 换皮配置
-  program
-    .command('skin')
-    .description(locals.SKIN_DESC)
-    .action(options => init({
-      force: options.force
-    }));
+  // // H5 app 换皮配置
+  // program
+  //   .command('skin')
+  //   .description(locals.SKIN_DESC)
+  //   .action(options => init({
+  //     force: options.force
+  //   }));
 };

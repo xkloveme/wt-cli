@@ -42,12 +42,11 @@ async function downloadTemplateFromCloud (framework, template, targetPath) {
 
     framework = (framework || 'vue').toLowerCase();
     template = (template || 'basic').toLowerCase().replace(/\s/, '-');
-
     try {
         // 请求模板
         let result = await axios.request({
             responseType: 'arraybuffer',
-            url: 'https://codeload.github.com/qq282126990/webpack/zip/release-' + template,
+            url: 'https://github.com/xkloveme/wt-template/archive/master.zip',
             method: 'get',
             headers: {
                 'Content-Type': 'application/zip'
@@ -219,12 +218,12 @@ exports.download = async function (metaParams = {}) {
     const files = fs.readdirSync(storeDir);
 
     store.set('storeDir', `${storeDir}/${files}`);
-
     let templateConfigContent = fs.readFileSync(path.resolve(`${storeDir}/${files}`, 'meta.json'), 'utf-8');
 
     let templateConfig = JSON.parse(templateConfigContent);
 
     store.set('templateConfig', templateConfig);
+    console.log('🐛🐛🐛: templateConfig', templateConfig)
 
     return templateConfig;
 }

@@ -1,6 +1,6 @@
 {
   "name": "wt-cli",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "快速开始一个wt-cli项目",
   "bin": {
     "wt": "bin/wt-cli.js"
